@@ -1,5 +1,6 @@
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+// some arbitrary array manipulation
 function manipulate(arr) {
   return arr
     .filter(item => item >= 5 && item <= 10)

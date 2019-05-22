@@ -46,6 +46,7 @@ doHomework("math", () => {
 })
 
 console.log("Callbacks defined elsewhere...")
+
 function doHomework(subject, callback) {
   alert(`Starting my ${subject} homewrok.`)
   callback()

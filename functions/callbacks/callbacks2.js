@@ -5,3 +5,7 @@ function apiCall(api, callback) {
     console.log(`making request to ${api}`)
   }, 500)
 }
+
+apiCall("an api", () => {
+  console.log("a thing")
+})

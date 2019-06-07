@@ -1,10 +1,3 @@
-/*
-promise terminology
-fulfilled - The action relating to the promise succeeded
-rejected - The action relating to the promise failed
-pending - Hasn't fulfilled or rejected yet
-settled - Has fulfilled or rejected
-*/
 var promise = new Promise((resolve, reject) => {
   // do a thing, possibly async, then...
   let condition = true

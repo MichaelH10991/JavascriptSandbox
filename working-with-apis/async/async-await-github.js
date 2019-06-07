@@ -1,3 +1,10 @@
+/*
+  A simple call to the github api that returns a users picture. This call create ansynchronous calls to the api
+  using a function tagged async. This allows us to use await and create calls in a more procedural manner without
+  using callbacks or promises. A function tagged with the await keyword returns a promise, so we can do extra stuff
+  to the call if we want such as error handling althhough it is more common to see awaits wrapped in a try catch block.
+*/
+
 async function showAvatar() {
   let user = "mike-trt"
 

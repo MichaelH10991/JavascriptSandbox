@@ -108,9 +108,7 @@ console.log(array[1]) // 2
 class Counter {
   constructor() {
     this.count = 5
-    this.add = function() {
-      this.count++
-    }
+    this.add = () => this.count++
   }
   copy() {
     const copy = new Counter()

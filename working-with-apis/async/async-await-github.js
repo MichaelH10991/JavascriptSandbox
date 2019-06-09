@@ -40,11 +40,11 @@ function calculate(last_updated) {
   let today = new Date()
   diff = (today - last) / one_day
   if (diff < 1) {
-    document.getElementById("content").innerText = "Your las commit was today"
+    document.getElementById("content").innerText = "Your last update was today"
   } else {
     document.getElementById(
       "content"
-    ).innerText = `Your last commit was ${diff} days ago`
+    ).innerText = `Your last update was ${diff} days ago`
   }
 }
 

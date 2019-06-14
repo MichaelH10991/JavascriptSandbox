@@ -1,0 +1,11 @@
+{
+  "name": "1.basics",
+  "version": "1.0.0",
+  "description": "basic node demos and practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Humphries",
+  "license": "ISC"
+}

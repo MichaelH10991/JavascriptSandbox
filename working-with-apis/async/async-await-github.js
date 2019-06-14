@@ -48,17 +48,29 @@ function calculate(last_updated) {
   }
 }
 
-// could return an entire nested object with date values and time values
 function cleanup(data) {
   let split = data.split("T")
   let [date, time] = split
   time = time.replace(/[A-Z]/g, "")
-  date1 = date.split("-")
-  time = time.split(":")
+  date_components = date.split("-")
+  time_components = time.split(":")
+
+  /* 
+  returns the whole date, a date object with the individual date components (year, month, day) 
+  and the time with each individual time component (hour, minute, second)
+  */
   return {
     whole_date: date,
-    date: { year: date1[0], month: date1[1], day: date1[2] },
-    time: { hour: time[0], minute: time[1], second: time[2] }
+    date: {
+      year: date_components[0],
+      month: date_components[1],
+      day: date_components[2]
+    },
+    time: {
+      hour: time_components[0],
+      minute: time_components[1],
+      second: time_components[2]
+    }
   }
 }
 
@@ -69,26 +81,6 @@ function todays_dates() {
   let mm = String(today.getMonth() + 1).padStart(2, "0") //January is 0!
   let yyyy = today.getFullYear()
   return { day: dd, month: mm, year: yyyy }
-}
-
-function calculate_time(last_updated, today) {
-  let year_diff = today.year - last_updated.date.year
-  let month_diff = today.month - last_updated.date.day
-  let day_diff = today.day - last_updated.date.day
-
-  if (year_diff > 0) {
-    console.log(
-      `You last updated ${year_diff} year(s) ${month_diff} month(s) and ${day_diff} day(s) ago`
-    )
-  } else if (month_diff > 0) {
-    console.log(
-      `You last updated ${month_diff} month(s) and ${day_diff} day(s) ago`
-    )
-  } else {
-    console.log(`You last updated ${day_diff} day(s) ago`)
-  }
-
-  console.log(`${year_diff}, ${month_diff}, ${day_diff}`)
 }
 
 showAvatar().catch(e => {

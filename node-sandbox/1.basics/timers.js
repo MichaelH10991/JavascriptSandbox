@@ -10,8 +10,10 @@ function someAsyncFunction(callback) {
   fs.readFile("resources/hello.txt", callback)
 }
 
+// the timer starts
 const timeoutScheduled = Date.now()
 
+// this is triggered when there are no more callbacks on the poll queue the timer phase starts
 setTimeout(() => {
   const delay = Date.now() - timeoutScheduled
   console.log(`${delay}ms have passed since i was scheduled`)

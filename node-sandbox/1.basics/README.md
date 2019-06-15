@@ -1,3 +1,7 @@
+# What is the purpose of this repo?
+
+This repo is soley a place for me to practice and apply fundimental conceptss of the Node.js framework.
+
 # What is node?
 
 1. asynchronous, event driven Javascript runtime
@@ -17,7 +21,7 @@ Find what version of V8 node is running: `node -p process.versions.v8`
 
 ## V8?
 
-"V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone, or can be embedded into any C++ application."
+"V8 is Google’s open source high-performance JavaScript and [WebAssembly](https://webassembly.org/) engine, written in C++. It is used in Chrome and in Node.js, among others. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone, or can be embedded into any C++ application."
 
 [V8 Homepage](https://v8.dev/)
 
@@ -26,7 +30,7 @@ Find what version of V8 node is running: `node -p process.versions.v8`
 1. Ruby's Event Machine
 2. Python's Twisted
 
-## What is Node.js' event loop?
+## What is the Node.js event loop?
 
 Click [here](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/) for the docs.
 
